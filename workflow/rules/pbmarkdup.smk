@@ -32,4 +32,4 @@ rule pbmarkdup:
     shell:
         "pbmarkdup --num-threads {threads} "
         "{input.bam} "
-        "{output.bam} --log-level INFO 2> {log}"
+        "{output.bam} --log-level INFO &> {log}"
